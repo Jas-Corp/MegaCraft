@@ -1,0 +1,16 @@
+name: MegaCraft
+author: Jas14
+version: 1.0
+main: fr.jas14.megacraft.Main
+commands:
+ money:
+ jregion:
+ police:
+ modo:
+ rank:
+ job:
+ skick:
+ sban:
+ shop:
+ itemname:
+ spardon:
