@@ -1,3 +1,3 @@
 # MegaCraft
 
-Tout droit réservé a Jas.
+Tout droit réservé à Jas.
