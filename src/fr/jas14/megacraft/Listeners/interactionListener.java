@@ -1,10 +1,12 @@
 package fr.jas14.megacraft.Listeners;
 
-import org.bukkit.Material;
+
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
+import org.bukkit.event.inventory.InventoryOpenEvent;
+import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.event.player.PlayerInteractEvent;
 
 import fr.jas14.megacraft.Main;
@@ -51,6 +53,12 @@ public class interactionListener implements Listener{
 		}
 
 	}
+	@EventHandler
+	private void onAnvil(InventoryOpenEvent e) {
+		if(e.getInventory().getType().equals(InventoryType.ANVIL) && e.getPlayer().isOp()) e.setCancelled(true);;
+		
+	}
+	
 	
 	
 	@EventHandler

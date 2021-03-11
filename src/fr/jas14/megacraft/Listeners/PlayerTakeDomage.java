@@ -141,6 +141,7 @@ public class PlayerTakeDomage implements Listener {
 	private void bed(PlayerInteractEvent e) {
 		Player p = e.getPlayer();
 		RPlayer rp = main.playertoRplayers.get(p);
+		if(rp == null) return;
 		if(rp.getAsPlayer() != null) {
 			if (e.getClickedBlock().getType().equals(Material.BED_BLOCK)) {
 				if(rp.getAsPlayer().isOnline()) {
